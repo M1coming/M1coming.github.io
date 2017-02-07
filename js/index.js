@@ -280,7 +280,7 @@ var floor_con=new Array(
 		new Array('images/dc5.jpg','小米USB接口','69元','8879人评价'),
 		new Array('images/dc5.jpg','充电电池套装','88元','1239人评价'),
 		new Array('images/dc6.jpg','米家车载充电器','49元','98人评价'),
-		new Array('images/dy.jpg','sanDike 16...','31.9元',''),
+		new Array('images/dy.jpg','sanDike 1...','31.9元',''),
 		new Array('','','','电池储存卡')
 
 	)
