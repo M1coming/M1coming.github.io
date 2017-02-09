@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>聚宝盆</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" href="css-juhuasuan/reset.css">
+	<link rel="stylesheet" href="css-juhuasuan/swiper.min.css">
+	<link rel="stylesheet" href="css-juhuasuan/bootstrap.min.css">
+	<script src="js-juhuasuan/swiper.min.js"></script>
+	<link rel="stylesheet" href="css-juhuasuan/ju.css">
+
+
+</head>
+<body>
+<div class="wrap">
+
+		<div class="title c_change">
+			<a href="ju.html"><img id="back2" src="images-juhuasuan/10_03.png" alt=""></a>
+			<span class="title4">聚宝盆</span>
+		</div>
+		<div class="nav">
+				<a  href="index2-ju.html" class="gray border_r2">商品</a>
+				<a  href="index3-ju.html" class="gray border_r2">生活</a>
+				<a href="index4-ju.html"  class="gray border_r2">品牌</a>
+				<a href="index6-ju.html" class="red ">聚宝盆</a>
+		</div>
+		<div class="banner">
+			<div class="swiper-wrapper" >
+		        <div class="swiper-slide "><img src="images-juhuasuan/1_26.png" alt=""></div>
+		        <div class="swiper-slide "><img src="images-juhuasuan/2_03.png" alt=""></div>
+		        <div class="swiper-slide "><img src="images-juhuasuan/2_06.png" alt=""></div>
+		        <div class="swiper-slide "><img src="images-juhuasuan/3_03.png" alt=""></div>
+		        <div class="swiper-slide "><img src="images-juhuasuan/3_43.png" alt=""></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination" id="swiper-pagination6"></div>
+		</div>
+	
+		<div class="contain6_first">
+			<img class="contain6_img" src="images-juhuasuan/j6_03.png" alt="">
+			<b class="contain_b">聚名品</b>
+			<p class="contain_p">轻奢购物第一站</p>
+			<img class="jiantou" src="images-juhuasuan/juhuasuan_04_06.png" alt="">
+		</div>
+		<div class="contain6">
+			<img class="contain6_img" src="images-juhuasuan/j6_06.png" alt="">
+			<b class="contain_b2">聚家装</b>
+			<p class="contain_p">家装一起团&nbsp&nbsp费用省一半!</p>
+			<img class="jiantou" src="images-juhuasuan/juhuasuan_04_06.png" alt="">
+		</div>
+		<a href="index7-ju.html"><div class="contain6">
+			<img class="contain6_img" src="images-juhuasuan/j6_08.png" alt="">
+			<b class="contain_b3">聚&nbsp&nbsp透</b>
+			<p class="contain_p">每晚8点&nbsp&nbsp预定明天商品</p>
+			<img class="jiantou" src="images-juhuasuan/juhuasuan_04_06.png" alt="">
+		</div>
+		</a>
+</div>
+<script>
+window.onload=function(){
+var mySwiper=new Swiper('.banner',{
+
+	direction: 'horizontal',    //滑动方向   vertical竖向  horizontal横向
+    loop: true, 			    //循环  默认false 不循环
+    autoplay:500,		        //自动播放
+   	initialSlide:2, 		    //初始显示的索引内容
+   	speed:1000,					//速度  默认300
+   	
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+
+
+})
+document.documentElement.style.fontSize=innerWidth/16+"px";
+// onresize是当屏幕改变触发的事件
+// 640/16=40
+//  1rem=40px
+//  98px= rem
+onresize=function(){
+	document.documentElement.style.fontSize=innerWidth/16+"px";
+}
+}
+</script>
+
+
+
+</body>
+</html>
