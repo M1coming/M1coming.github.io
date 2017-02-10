@@ -305,10 +305,10 @@ div ul span li a dl dt dd {
 
 /*鼠标移入背景变色*/
 #find_bar_word a:hover,
-/*#find_but:hover{
+#find_but:hover{
 	background: #ff6700;
 	color: #fff;
-}*/
+}
 #find_hot{
 	width: 245px;
 	height: auto;
