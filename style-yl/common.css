@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*************************通用**********************************/
+ul,li,p,a,h1,h2,h3,h4,h5,h6,span,body{
+	margin:0;
+	padding:0;
+}
+.blank{
+	clear:both;
+}
+a{
+	text-decoration:none;
+}
+ul,li{
+	list-style:none;
+}
+body{
+	font-family:Microsoft yahei;
+}
+.returnTop{
+	position:fixed;
+	top:90%;
+	left:91.5%;
+	z-index: 1000;
+}
+
+/***************************导航区************************************/
+.navOut{
+	width:100%;
+	background-color: #fff;
+}
+
+#nav {
+	width:1211px;
+	height:80px;
+	margin:0 auto;
+	background-color:#fff;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	border-bottom:1px solid #ccc;
+	padding-top:10px;
+}
+#nav .navOne{
+	float:right;
+	margin-top:10px;
+}
+#nav .logo{
+	float:left;
+	width:230px;
+	height:55px;
+	margin:10px 20px 0 40px;
+	display:inline-block;
+	position:relative;
+	z-index:1;
+	background:url(../images-yl/logo.jpg) no-repeat 0 0;
+	background-size:contain;
+}
+#nav .navOne .navSel{	
+	float:left;
+	width:80px;
+	height:60px;
+	text-align:center;
+	margin-left:10px;
+	position:relative;
+}
+#nav .navOne .navSel>a{
+	color:#666;
+	font-size:16px;
+	margin-top:20px;
+	display:block;
+}
+
+#nav .navOne .navSel:hover a{
+	color:#ec5d57;
+}
+
+/*******************导航位移线条*********************/
+#nav .navOne .navSel .noneBox{
+	width:100%;
+	border-bottom:5px solid #ec5d57;
+	position:absolute;
+	left:-800px;
+	top:114%;
+	opacity:0;
+	transition:0.5s;
+}
+
+#nav .navOne .navSel:hover .noneBox{
+
+	transform:translate(800px);
+	opacity:1;
+}
+
+/**********个人中心************/
+#nav .navUser{
+	float:right;
+	border-radius:50%;
+	width:40px;
+	height:40px;
+	margin:22px 31px 0 20px;
+	cursor:pointer;
+	position:relative;
+	text-align:center;
+	background:url(../images-yl/user.jpg) no-repeat 0 0;
+	background-size:100% 100%;
+}
+#nav .navUser li a{
+	font-size:14px;
+	color:#666;
+}
+#nav .navUser img{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+#nav .navUser ul{
+	position:absolute;
+	top:100%;
+	right:-80%;
+	display:none;
+	background-color:#FFF;
+	border-radius:5%;
+	border-top:18px solid transparent;
+}
+#nav .navUser li{
+	width:98px;
+	height:40px;
+	margin-top:0;
+	cursor:pointer;
+	border:1px solid #ec5d57;
+	border-top:1px solid transparent;
+	line-height:36px;
+}
+#nav .navUser .navUserTop{			
+	border-bottom:1px dotted #ccc;
+}
+#nav .navUser:hover ul{
+	display:block;
+	z-index:10;
+}
+#nav .navUser:hover{
+	background-image:url(../images-yl/user2.jpg);
+}
+#nav .navUser li:hover,#nav .navUser li:hover a{
+	background-color:#ec5d57;
+	color:#fff;
+}
+			
+/*******************************************主题***************************************************/
+
+
+
+
+
+
+/*****************************************页脚*****************************************************/
+footer{
+	border:1px solid transparent;
+	position:relative;
+	width:1211px;
+	height:100px;
+	margin:100px auto 50px auto;
+	border-top:1px solid #ccc;
+	padding-top:50px;
+}
+footer p,h3{
+	color:#333;
+	font-size:10px;
+}
+.footerBox1,.footerBox2{
+	width:20%;
+	text-align:center;
+	float:left;
+}
+.footerBox1{
+	margin-left:30%;
+}
+.footerBox2{
+	margin-top:0;
+}
+footer p a{
+	color:#666;
+}
+footer p,a,h3{
+	margin:5px;
+}
+footer a:hover{
+	color:#ec5d57;
+	text-decoration: underline;
+}
+
+
